@@ -1,5 +1,7 @@
 .next/
 .swc/
 node_modules/
+test-results/
+.vscode
 .env
 .env.local
