@@ -46,6 +46,12 @@ Then, in another terminal, run:
 npm run test:e2e
 ```
 
+This may warn you that playwright is not installed. If so, run:
+
+```bash
+npx playwright install
+```
+
 This runs a headless browser that checks that the rendered UI meets some very coarse requirements. I initially implemented a few more thorough tests that go all the way through to the display of the EOBs, but their reliance on external services' API calls made them simply too flakey to be useful.
 
 With more time I would like to implement tests for the api endpoints by stubbing the underlying calls to api.flexpa.com.
