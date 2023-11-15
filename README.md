@@ -35,6 +35,7 @@ After the public-token is retrieved from Flexpa, the front-end will call to the 
 There is a small set of non-exhaustive integrations tests. They can be run by first launching the server:
 
 ```bash
+npm install
 npm run build
 npm start
 ```
