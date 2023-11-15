@@ -54,7 +54,9 @@ export function useFlexpa() {
             return setErrorState({ code: 'ACCESS_TOKEN_REQUEST_FAILED' });
           }
           const json = await response.json();
-          // validate();
+          // it would be good to validate this to a schema, but for now we'll
+          // just let setAuth attempt to decode the JWT. If that succeeds, thats
+          // about as valid as it gets, right?
           setAuth(json.access_token);
           setErrorState(undefined);
         } catch (error) {
