@@ -2,6 +2,6 @@
 .swc/
 node_modules/
 test-results/
-.vscode
+.vscode/
 .env
 .env.local
